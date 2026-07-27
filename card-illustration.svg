@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+  <title id="title">Accessible interface illustration</title>
+  <desc id="desc">An abstract laptop interface with accessibility symbols and colorful geometric shapes.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="oklch(92% 0.08 250)"/>
+      <stop offset="1" stop-color="oklch(82% 0.13 285)"/>
+    </linearGradient>
+    <linearGradient id="screen" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="oklch(29% 0.08 260)"/>
+      <stop offset="1" stop-color="oklch(20% 0.04 260)"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="28" stdDeviation="28" flood-color="oklch(20% 0.04 260 / 0.28)"/>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="1000" fill="url(#background)"/>
+  <circle cx="1380" cy="170" r="190" fill="oklch(79% 0.17 70 / 0.74)"/>
+  <circle cx="175" cy="820" r="240" fill="oklch(69% 0.16 195 / 0.42)"/>
+  <path d="M0 170C260 40 430 40 655 160S1060 300 1600 65V0H0Z" fill="oklch(97% 0.02 255 / 0.52)"/>
+
+  <g filter="url(#shadow)">
+    <rect x="310" y="180" width="980" height="610" rx="52" fill="oklch(93% 0.02 255)"/>
+    <rect x="350" y="220" width="900" height="530" rx="30" fill="url(#screen)"/>
+    <path d="M215 790H1385L1290 895H310Z" fill="oklch(38% 0.04 260)"/>
+    <rect x="665" y="820" width="270" height="28" rx="14" fill="oklch(65% 0.03 260)"/>
+  </g>
+
+  <g transform="translate(440 315)">
+    <rect width="720" height="335" rx="28" fill="oklch(97% 0.02 255)"/>
+    <rect x="42" y="42" width="150" height="42" rx="21" fill="oklch(48% 0.18 255)"/>
+    <rect x="42" y="118" width="520" height="38" rx="19" fill="oklch(30% 0.04 260)"/>
+    <rect x="42" y="178" width="610" height="22" rx="11" fill="oklch(69% 0.03 260)"/>
+    <rect x="42" y="220" width="560" height="22" rx="11" fill="oklch(76% 0.03 260)"/>
+    <rect x="42" y="262" width="230" height="50" rx="15" fill="oklch(74% 0.14 255)"/>
+    <circle cx="628" cy="95" r="47" fill="oklch(78% 0.14 165)"/>
+    <path d="M628 65v60M598 95h60" stroke="oklch(20% 0.04 260)" stroke-width="14" stroke-linecap="round"/>
+  </g>
+
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="235" cy="300" r="84" stroke="oklch(48% 0.18 255)" stroke-width="24"/>
+    <path d="M235 250v105M190 300h90" stroke="oklch(48% 0.18 255)" stroke-width="24"/>
+    <path d="M1350 615l65-112 65 112Z" stroke="oklch(43% 0.15 320)" stroke-width="24"/>
+  </g>
+</svg>

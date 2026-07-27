@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta
+    name="description"
+    content="An accessible, responsive typographic article card built with OKLCH colors, fluid typography, cascade layers, container queries, and optical text trimming."
+  >
+  <meta name="author" content="Blen Hadgu">
+  <meta name="color-scheme" content="light dark">
+  <title>AI-Co-Piloted Typographic Card | Blen Hadgu</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to card</a>
+
+  <header class="site-header">
+    <p class="site-header__brand">Blen Hadgu · Frontend Lab</p>
+
+    <form class="theme-switch" aria-label="Display preferences">
+      <input
+        class="theme-switch__control"
+        id="dark-mode"
+        type="checkbox"
+        role="switch"
+        aria-label="Use dark mode"
+      >
+      <label class="theme-switch__label" for="dark-mode">
+        <span aria-hidden="true">☾</span>
+        Dark mode
+      </label>
+    </form>
+  </header>
+
+  <main class="page-shell" id="main-content">
+    <section class="card-demo" aria-labelledby="demo-title">
+      <header class="demo-heading">
+        <p class="demo-heading__eyebrow">AI-Co-Piloted Typographic Card</p>
+        <h1 id="demo-title">Modern CSS, carefully audited</h1>
+        <p>
+          Resize the window and toggle dark mode to test the card’s fluid type,
+          responsive layout, contrast, and optical text trimming.
+        </p>
+      </header>
+
+      <article class="article-card">
+        <figure class="article-card__media">
+          <img
+            src="card-illustration.svg"
+            alt="Abstract illustration of a laptop displaying an accessible interface, surrounded by geometric shapes."
+            decoding="async"
+          >
+        </figure>
+
+        <section class="article-card__content" aria-labelledby="article-title">
+          <p class="article-card__badge">Accessibility</p>
+
+          <h2 class="article-card__title" id="article-title">
+            Designing interfaces that welcome everyone
+          </h2>
+
+          <p class="article-card__description">
+            A strong interface is more than visually attractive. It gives people clear
+            structure, readable typography, reliable contrast, and controls that work
+            across devices and input methods.
+          </p>
+
+          <a class="article-card__button" href="#audit-notes">
+            Read Article
+            <span aria-hidden="true">→</span>
+          </a>
+        </section>
+      </article>
+
+      <aside class="audit-note" id="audit-notes" aria-labelledby="audit-title">
+        <h2 id="audit-title">Audit summary</h2>
+        <p>
+          The implementation uses low-specificity classes, relative units, WCAG AA
+          color pairs, a bounded <code>clamp()</code> scale, and a
+          <code>@supports</code> enhancement for <code>text-box</code>.
+        </p>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Created by Blen Hadgu · Semantic HTML and modern CSS</p>
+  </footer>
+</body>
+</html>
